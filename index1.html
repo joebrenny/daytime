@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Java Script">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Joe Brenny">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipping converter </title>
+    <!--This is my Assignment 5 java script platform-->
+    <link rel="JavaScript" href="js/js.js">
+    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+    
+    
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/pricing.css">
+        <!--<![endif]-->
+</head>
+<body>
+
+
+
+
+
+
+
+<div class="pure-menu pure-menu-horizontal">
+    <a href="#" class="pure-menu-heading"><img src="https://logopond.com/logos/3f16d9df81a65b263210a101f5ca8442.png " alt="logo" style="width:75px;height:75px;"></a>
+    <ul class="pure-menu-list" >
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+        <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Pricing</a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+    </ul>
+</div>
+
+<div class="banner">
+    <h1 class="banner-head">
+        TIP CALCULATOR<br>
+        Support the people that serve you!!
+        
+    </h1>
+</div>
+
+<div class="l-content">
+    <div class="pricing-tables pure-g">
+        <div class="pure-u-1 pure-u-md-1-3">
+            <div class="pricing-table pricing-table-free">
+                <div class="pricing-table-header">
+                   
+
+                    <span class="pricing-table-price">
+                         <span style="padding: 5%">BILL AMOUNT </span>
+                    </span>
+                </div>
+
+                <ul class="pricing-table-list">
+                    <li>Enter the bill amount you want to tip on.</li>
+                </ul>
+
+                <form action="/action_page.php">
+                    TOTAL US$: <input id="billamount" type="text" name="fname"><br>
+                    
+                    <input type="submit" value="Submit">
+                  </form>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-3">
+            <div class="pricing-table pricing-table-biz pricing-table-selected">
+                <div class="pricing-table-header">
+                    
+                
+
+                    <span class="pricing-table-price">
+                         <span>TIP %</span>
+                    </span>
+                </div>
+
+                <ul class="pricing-table-list">
+                    <li>Think about your service.</li>
+                    
+                </ul>
+
+                <form action="/action_page.php">
+                    TIP %: <input id="tip" type="text" name="fname"><br>
+                    
+                    <input type="submit" value="Submit">
+                  </form>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-3">
+            <div class="pricing-table pricing-table-enterprise">
+                <div class="pricing-table-header">
+                    <h2>How many people are splitting the bill</h2>
+
+                    <span class="pricing-table-price">
+                         <span></span>
+                    </span>
+                </div>
+
+                <ul class="pricing-table-list">
+                    <li>Thanks for using this</li>
+                
+                </ul>
+                <form action="/action_page.php">
+                    How many People: <input id="numofpeople" type="text" name="fname"><br>
+                    
+                    <input id="click" type="submit" value="Submit">
+
+                
+            </div>
+
+        </div>
+        <div id="output">
+        <h2 id="tipoutput">this is the output</h2>
+        <button type="button" id="calbutton">Calculate!</button>
+        </div>
+    </div> <!-- end pricing-tables -->
+
+    <div class="information pure-g">
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+                <h3 class="information-head">IS it true if you don't use it you loose it!</h3>
+                <p>
+                Please enter the amount and let me do the work!!!
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+                <h3 class="information-head">YUP this Service is free</h3>
+                <p>
+                    We are FREE so don't sweat it.  Just tell your friends!!!
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+                <h3 class="information-head">LETS HELP EACH OTHER</h3>
+                <p>
+                   We are willing to help you with any questions Heck maybe you can help us
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+                <h3 class="information-head">See you soon! </h3>
+                <p>
+                    Thank you for using this tip calculator
+                </p>
+            </div>
+        </div>
+    </div> <!-- end information -->
+</div> <!-- end l-content -->
+
+<div class="footer l-box">
+    <p>
+        <a href="#">Contact US</a>  Thanks for using this tip calautaer <a href='http://unsplash.com/'>GIVE MONEY HERE</a>.
+    </p>
+
+</div>
+<div id="req">
+    <h2>REQ 2</h2> 
+    <p>I am making a tip calculator that will adda tip based on you service.  This will be good for people that eat in big groupd but still need
+        to pay for there own meal.  It will also make sure that the tip is included.  I went with a simple layout and have the three inputs 
+        that are right in the front. 
+        <br>
+            I will have three inputs and one will be the total bill.  The second will be the tip amount and the last will be the amount of people.
+            I will take the total amount multiplied by the tip %, which will give you the total including in the tip.  I may add taxes if i have time.
+            <br>
+            Once the users enter all the inputs and click sibmitt it will do the math based on the inputs.  The awnser will be displayed on the right of the last 
+            input i think  
+
+    </p>
+
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
